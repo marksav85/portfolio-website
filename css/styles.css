@@ -34,6 +34,11 @@
         font-weight: var(--h1-font-weight);
     }
 
+    span {
+        color: var(--link-color);
+        font-weight: bold;
+    }
+
     a {
         color: var(--link-color);
     }
