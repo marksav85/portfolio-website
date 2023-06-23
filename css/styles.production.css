@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: last 2 version
 */
 
 * {
@@ -62,7 +62,6 @@ a:active {
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -82,7 +81,6 @@ button {
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -201,11 +199,11 @@ button {
 
     .grid__item:last-child {
         -ms-grid-column: 3;
-        grid-column-start: 3;
+            grid-column-start: 3;
         -ms-grid-column-span: 0;
         grid-column-end: 3;
         -ms-grid-row: 1;
-        grid-row-start: 1;
+            grid-row-start: 1;
         -ms-grid-row-span: 2;
         grid-row-end: 3;
     }
@@ -308,6 +306,18 @@ button {
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .profile__portrait {
+        width: 150px;
     }
 }
 

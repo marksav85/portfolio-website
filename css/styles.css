@@ -10,8 +10,10 @@
         --body-font: 'Roboto', sans-serif;
         --body-font-weight: 400;
         --body-font-size: 16px;
+        --body-font-size-mobile: 14px;
         --h1-font-weight: 500;
         --h1-font-size: 40px;
+        --h1-font-size-mobile: 30px;
         --btn-margin: 10px;
         --btn-padding: 10px;
         --btn-border-radius: 3px;
@@ -232,6 +234,18 @@
     @media all and (max-width: 500px) {
         .grid {
             grid-template-columns: 1fr;
+        }
+        
+        h1 {
+            font-size: var(--h1-font-size-mobile);
+        }
+
+        body {
+            font-size: var(--body-font-size-mobile);
+        }
+
+        .profile__portrait {
+            width: 150px;
         }
     }
     
