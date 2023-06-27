@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.production.css"> -->
     <title>My Portfolio: Homepage</title>
 </head>
 <body>
+    <div class="container">
     <header class="page-header">
         <div class="page-header__image">
             <img src="img/logo-header.png" alt="Logo" class="page-header__item">
@@ -37,13 +39,17 @@
         </div>     
     </header>
     <div class="profile">
-        <img src="img/headshot.png" class="profile__portrait" alt="Mark Saville Portrait">
-        <h1>Hello World</h1>
-        <p>My name is Mark Saville</p>
-        <p>I am a <span>Web Developer</span> from the UK</p>
-        <a href="https://codepen.io/marksav85/pen/XWyjjoq" target="_blank">Check out my CodePen</a><br>
-        <button type="button">First Button</button><br>
-        <button class="button__secondary">A Second Button!</button>
+        <div class="profile__image">
+            <img src="img/headshot.png" class="profile__portrait" alt="Mark Saville Portrait">
+        </div>
+        <div class="profile__content">
+            <h1>Hello World</h1>
+            <p>My name is Mark Saville</p>
+            <p>I am a <span>Web Developer</span> from the UK</p>
+            <a href="https://codepen.io/marksav85/pen/XWyjjoq" target="_blank">Check out my CodePen</a><br>
+            <button type="button">First Button</button><br>
+            <button class="button__secondary">A Second Button!</button>
+        </div>
     </div>
     <footer class="page-footer">
         <p>Find me on</p>
@@ -53,6 +59,7 @@
             <img src="img/linkedin_icon.svg" alt="Linkedin">
         </div>
     </footer>
+    </div>
     <script src="js/tota11y.min.js"></script>     
 </body>
 </html>
