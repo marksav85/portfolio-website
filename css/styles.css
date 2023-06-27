@@ -143,6 +143,7 @@
     }
 
     #about-picture {
+        margin: 20px auto;
         width: 40%;  
         min-width: 350px;
     }
