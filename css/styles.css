@@ -91,7 +91,8 @@
     }
 
     .page-header {
-        display: flex;
+        display: flex; 
+        justify-content: space-between;
         width: 100%;
         padding: 20px;
         margin: auto;
@@ -117,7 +118,7 @@
 
     .navigation-list li {
         display: inline-block;
-        margin-left: 15px;
+        
     }
 
     .navigation-list__item--active {
@@ -125,7 +126,6 @@
     }
 
     .profile {
-        flex-grow: 1;
         max-width: 700px;
         margin: 0 auto;
     }
@@ -252,6 +252,18 @@
 
         body {
             font-size: var(--body-font-size-mobile);
+        }
+
+        .page-header {
+            clear: both;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-header__item ul {
+            margin: 0;
+            padding: 0;
         }
 
         .profile__portrait {
