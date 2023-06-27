@@ -197,6 +197,10 @@
     .grid__item {
         display: inline-block;
         width: 33%;
+        background-color: lightgray;
+        padding: 5px 15px;
+        width: auto;
+        min-height: auto;
    }
         /* end grid fallback */
 
