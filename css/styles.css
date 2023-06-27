@@ -25,8 +25,6 @@
     }
     
     body {
-        display: flex;
-        flex-direction: column;
         font-family: var(--body-font);
         font-weight: var(--body-font-weight);
         font-size: var(--body-font-size);
@@ -92,12 +90,23 @@
         color: var(--text-dark);
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
     .page-header {
         display: flex; 
         justify-content: space-between;
         width: 100%;
         padding: 20px;
         margin: auto;
+        flex-grow: 1;
+    }
+
+    .page-header__image {
+        display: flex;
     }
 
     .page-header img {
@@ -130,6 +139,7 @@
         display: flex;
         max-width: 700px;
         margin: 0 auto;
+        flex-grow: 1;
     }
 
     .profile__portrait { 
@@ -139,7 +149,7 @@
         border-radius: 50%;
     }
 
-    .container {
+    .contact__container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -160,6 +170,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        flex-grow: 1;
     }
 
     /* start grid fallback */
