@@ -140,7 +140,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+    }
+
+    #about-picture {
+        width: 40%;  
+        min-width: 350px;
     }
 
     .page-footer {
@@ -246,6 +250,10 @@
 
         .profile__portrait {
             width: 150px;
+        }
+
+        #about-picture {
+            min-width: 300px; 
         }
     }
     
