@@ -148,6 +148,10 @@
         min-width: 350px;
     }
 
+    .projects {
+        padding: 20px;
+    }
+
     .page-footer {
         clear: both;
         display: flex;
