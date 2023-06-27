@@ -25,6 +25,8 @@
     }
     
     body {
+        display: flex;
+        flex-direction: column;
         font-family: var(--body-font);
         font-weight: var(--body-font-weight);
         font-size: var(--body-font-size);
@@ -117,8 +119,7 @@
     }
 
     .navigation-list li {
-        display: inline-block;
-        
+        display: inline-block;   
     }
 
     .navigation-list__item--active {
@@ -126,11 +127,12 @@
     }
 
     .profile {
+        display: flex;
         max-width: 700px;
         margin: 0 auto;
     }
 
-    .profile__portrait {
+    .profile__portrait { 
         float: left;
         width: 250px;
         margin-right: 40px;
