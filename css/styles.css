@@ -185,6 +185,24 @@
         align-items: center;
     }
 
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .contact__form input, .contact__form textarea {
+        margin-bottom: 5px;
+        border-radius: 3px;
+        border: 1px solid #357b70;
+        min-width: 200px;
+    }
+    
+    .error-message {
+        color: red;
+        font-size: 0.8em;
+      }
+
     /* contact end */
 
     /* work start */
