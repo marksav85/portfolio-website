@@ -40,27 +40,29 @@
         </header>
         <div class="contact__container">
             <h1>Contact Mark Saville</h1>
-            <form action="/login-form-action" method="post">
-                <label for="firstname">First Name:</label><br>
-                <input type="text" id="firstname" name="user_firstname">
-            </form>
-            <form action="/login-form-action" method="post">
-                <label for="lastname">Last Name:</label><br>
-                <input type="text" id="lastname" name="user_lastname">
-            </form>
-            <form action="/login-form-action" method="post">
-                <label for="email">Email:</label><br>
-                <input type="email" required id="email" name="user_email">
-            </form>
-            <form action="/login-form-action" method="post">
-                <label for="phone">Phone:</label><br>
-                <input type="tel" id="phone" name="user_phone">
-            </form>
-            <form action="/login-form-action" method="post">
-                <label for="message">Message:</label><br>
-                <textarea id="message" required></textarea>
-            </form>
-            <button type="submit">Submit</button><br>
+                <div class="contact__form">
+                    <form action="/login-form-action" method="post">
+                        <label for="firstname">First Name:</label><br>
+                        <input type="text" id="firstname" name="user_firstname">
+                    </form>
+                    <form action="/login-form-action" method="post">
+                        <label for="lastname">Last Name:</label><br>
+                        <input type="text" id="lastname" name="user_lastname">
+                    </form>
+                    <form class="input-wrapper" action="/login-form-action" method="post">
+                        <label for="email">Email:</label><br>
+                        <input type="email" required id="email" name="user_email">
+                    </form>
+                    <form class="input-wrapper" action="/login-form-action" method="post">
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" id="phone" name="user_phone">
+                    </form>
+                    <form action="/login-form-action" method="post">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" required></textarea>
+                    </form>
+                    <button type="submit">Submit</button><br>
+                </div>
             <a href="mailto:marksav85@gmail.com?subject=Test%20test&body=This%20is%20a%20test">E-Mail: marksav85@gmail.com</a><br>
             <a href="tel:+4912334556789">Tel: +49 123 345 56789</a><br>
             <a href="mailto:marksav85@gmail.com?subject=Test%20test&body=This%20is%20a%20test">Contact me</a><br>
@@ -74,6 +76,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/tota11y.min.js"></script>      
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>  
 </body>
 </html>
