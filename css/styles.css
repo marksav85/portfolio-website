@@ -236,6 +236,11 @@
             min-height: auto;
         }
 
+        .grid__item img {
+            width: 100%;
+            height: auto;
+        }
+
         .grid__item:last-child {
             grid-column-start: 3;
             grid-column-end: 3;
