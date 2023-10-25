@@ -245,6 +245,19 @@ button:focus {
   padding: 20px;
 }
 
+.grid__item h2 {
+  font-size: 20px;
+}
+
+.grid__item p {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.grid__item img {
+  height: 30%;
+}
+
 /* start grid fallback */
 .grid__item {
   display: inline-block;
@@ -252,14 +265,16 @@ button:focus {
   background-color: lightgray;
   padding: 5px 15px;
   width: auto;
-  min-height: auto;
+  min-height: 0px;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
   }
 
@@ -268,6 +283,7 @@ button:focus {
     padding: 5px 15px;
     width: auto;
     min-height: auto;
+    max-height: 1200px;
   }
 
   .grid__item img {
@@ -355,15 +371,6 @@ button:focus {
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 30px;
-  }
-
-  body {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-
   .page-header {
     justify-content: center;
     display: flex;
@@ -384,7 +391,16 @@ button:focus {
     min-width: 300px;
   }
 
-  .projects img {
+  .grid__item h2 {
+    font-size: 20px;
+  }
+
+  .grid__item p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .grid__item img {
     height: 40%;
   }
 }
@@ -392,6 +408,20 @@ button:focus {
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px 900px 800px;
+  }
+
+  .grid__item h2 {
+    font-size: 20px;
+  }
+
+  .grid__item p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .grid__item img {
+    height: 30%;
   }
 }
 
@@ -424,5 +454,26 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+  @media all and (min-width: 750px) and (max-width: 1000px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 700px 900px;
+    }
+
+    .grid__item h2 {
+      font-size: 20px;
+    }
+
+    .grid__item p {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .grid__item img {
+      height: 30%;
+    }
   }
 }
