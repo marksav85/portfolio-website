@@ -139,6 +139,31 @@ button:focus {
   text-decoration: none;
 }
 
+/* FOOTER */
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  margin: 10px;
+}
+
 /* PROFILE */
 
 .profile {
@@ -369,20 +394,7 @@ button:focus {
   }
 }
 
-/* work end */
 
-/* footer start */
-
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-/* footer end */
 
 /* keyframes start */
 
