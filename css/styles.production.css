@@ -1,4 +1,4 @@
-/* global start */
+/* GLOBAL*/
 
 * {
   box-sizing: border-box;
@@ -98,9 +98,7 @@ button:focus {
   height: 100vh;
 }
 
-/* global end */
-
-/* page header start */
+/* HEADER */
 
 .page-header {
   display: flex;
@@ -141,9 +139,7 @@ button:focus {
   text-decoration: none;
 }
 
-/* page header end */
-
-/* home profile start */
+/* PROFILE */
 
 .profile {
   display: flex;
@@ -159,14 +155,69 @@ button:focus {
   border-radius: 50%;
 }
 
-/* home profile end */
-
-/* about start */
+/* ABOUT */
 
 .about__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about__container h1 {
+  margin: 5px;
+}
+
+.about__container p {
+  margin: 10px;
+}
+
+.about__container ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: square;
+}
+
+.about__container li {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.about-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+}
+
+.about-table thead tr {
+  background-color: #357b70;
+  color: #ffffff;
+  text-align: left;
+}
+
+.about-table th,
+.about-table td {
+    padding: 5px 5px;
+}
+
+.about-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.about-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.about-table tbody tr:last-of-type {
+  border-bottom: 2px solid #357b70;
+}
+
+.about-table tbody tr.active-row {
+  font-weight: bold;
+  color: #357b70;
 }
 
 #about-picture {
@@ -175,9 +226,7 @@ button:focus {
   min-width: 350px;
 }
 
-/* about end */
-
-/* contact start */
+/* CONTACT */
 
 .contact-page-header {
   display: flex;
@@ -250,9 +299,7 @@ button:focus {
   font-size: 0.8em;
 } */
 
-/* contact end */
-
-/* work start */
+/* WORK*/
 
 .projects {
   padding: 20px;
@@ -398,6 +445,10 @@ button:focus {
 
   .profile__portrait {
     width: 150px;
+  }
+
+  .about-table {
+    min-width: 300px;
   }
 
   #about-picture {
