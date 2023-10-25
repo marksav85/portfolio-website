@@ -179,13 +179,46 @@ button:focus {
 
 /* contact start */
 
+.contact-page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.contact-page-header img {
+  width: 200px;
+  height: 70px;
+}
+
 .contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact__form {
+.contact-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-items img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+/* .contact__form {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -202,7 +235,7 @@ button:focus {
 .error-message {
   color: red;
   font-size: 0.8em;
-}
+} */
 
 /* contact end */
 
