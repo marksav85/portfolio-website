@@ -155,6 +155,16 @@ button:focus {
   border-radius: 50%;
 }
 
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.profile__content h4 {
+  margin-bottom: 0;
+}
+
 /* ABOUT */
 
 .about__container {
