@@ -78,16 +78,51 @@
           <div class="grid__item">
             <h2>Pokedex App</h2>
             <img src="img/pokedex-main_page.png" alt="Pokedex App homepage" />
+            <h4>What is it?</h4>
             <p>
               An app that dynamically populates the page with Pokemon data from
               an API. The app allows you to search the list for a Pokemon by
               name, and when clicked on displays a modal box with the Pokemon's
-              name, type, and an image.
+              name, type, and an image. It is built using JavaScript, HTML and
+              CSS with Bootstrap styling.
+            </p>
+            <h4>The Build Process</h4>
+            <p>
+              The aim of this project was mastering JavaScript to create an app
+              that could efficiently fetch data from an API and display it
+              correctly. One of the major hurdles was writing JavaScript
+              promises to retrieve data from the API while ensuring the data
+              returned was in the correct format. Identifying and rectifying
+              errors in the data retrieval process posed a significant
+              challenge. Additionally, optimizing the app's performance,
+              particularly in handling API requests, presented a major obstacle.
             </p>
             <p>
-              The webpage is built using JavaScript, HTML and CSS. The data is
-              pulled from the PokeAPI and dynamically populated using
-              JavaScript. The modal box and CSS uses Bootstrap styling.
+              After creating thr base HTML layout, I began by working on
+              JavaScript promises, conducting thorough testing, and utilizing
+              console logging to identify issues in the API calls. Through this
+              iterative approach, I was able to troubleshoot issues effectively
+              and successfully pull the data from the API. I further expanded my
+              skills by incorporating Bootstrap to style the app and make it
+              responsive. Integrating the API data into both the main page and
+              the Bootstrap modal box was a crucial step that required to pull
+              everything together. To address the slow performance caused by API
+              requests, I made the decision to replace individual Pokémon images
+              with a static Pokémon ball image. While this sacrificed some
+              aesthetics, it significantly improved the app's speed and
+              responsiveness.
+            </p>
+            <p>
+              The end result of these efforts was the successful creation of a
+              Pokémon database application. Despite the challenges, I achieved
+              my goal of developing a functional tool that allows users to find
+              their favorite Pokémon. Through this project, I not only honed my
+              JavaScript skills but also gained valuable experience in API
+              integration, error handling, and performance optimization. While
+              some aesthetic compromises were made to ensure optimal
+              functionality, the final product fulfilled its purpose, providing
+              users with a practical and efficient way to explore and discover
+              their favorite Pokémon.
             </p>
             <p>
               Built using: <span style="font-weight: bold">HTML</span>,
@@ -110,20 +145,53 @@
           <div class="grid__item">
             <h2>Movie API</h2>
             <img src="img/myflix_api-db_view.png" alt="MongoDB database" />
+            <h4>What is it?</h4>
             <p>
-              The server-side component of a movies application. The application
-              allows users to sign up, update their information, and create an
-              account, as well as to retrieve movie information, including genre
-              and director, from the database. The application also allows users
-              to add and remove movies from their list of favorites.
+              The server-side component of a movies application. The webpage is
+              hosted via Heroku and built using Node.js, Express using REST
+              architecture. The business logic is modeled with Mongoose and the
+              databuse built with MongoDB. The API is tested using Postman and
+              includes token based authorisation and authentication. JSdoc is
+              used to comment the codebase and for documentation. The database
+              itself holds information on movies, and users, and allows for
+              basic CRUD operations via the specified endpoints.
+            </p>
+            <h4>The Build Process</h4>
+            <p>
+              The purpose in building this database was to establish secure and
+              efficient communication between the frontend and backend
+              components. The first challenge was implementing token-based
+              authorization and authentication to ensure user data security.
+              This involved tasks such as password hashing and token creation,
+              which were unfamiliar territories. Additionally, creating a
+              middleware function to verify and authenticate user tokens
+              presented a significant challenge.
             </p>
             <p>
-              The webpage is hosted via Heroku and built using Node.js, Express
-              using REST architecture. The business logic is modeled with
-              Mongoose and the databuse built with MongoDB. The API is tested
-              using Postman and includes token based authorisation and
-              authentication. JSdoc is used to comment the codebase and for
-              documentation.
+              I started by utilizing Node.js and Express to create essential
+              requests and endpoints. Following this, I built the database in
+              MongoDB, establishing the foundation for data storage. Connecting
+              the endpoints to the database required careful attention to
+              detail, ensuring the correct information could be retrieved. To
+              tackle the authentication challenge, I integrated bcrypt and
+              jsonwebtoken packages, enabling password hashing and token
+              generation for each user. Developing a middleware function to
+              validate tokens and authenticate users demanded focused effort,
+              but I successfully implemented this crucial security measure. To
+              enhance code readability and maintainability, I added JSDoc
+              comments, providing comprehensive documentation for the codebase.
+            </p>
+            <p>
+              The conclusion was a fully functional and secure database system.
+              Through overcoming the challenges, I created a robust backend
+              infrastructure that enabled the storage and retrieval of movie and
+              user information. Token-based authorization and authentication
+              mechanisms provided a high level of data security, ensuring user
+              privacy. Additionally, the implementation of JSDoc comments
+              enhanced the codebase's clarity and accessibility. This project
+              not only delivered a functional database but also provided
+              valuable insights into secure API development and documentation
+              practices, making it a significant learning experience.
             </p>
             <p>
               Built using: <span style="font-weight: bold">Node.js</span>,
@@ -140,22 +208,53 @@
           <div class="grid__item">
             <h2>MyFlix Movies</h2>
             <img src="img/myflix_react-movie_view.png" alt="MyFlix movies" />
+            <h4>What is it?</h4>
             <p>
-              The client-side component of a movies application. The application
-              is a single-page application (SPA) that allows users to sign up,
-              update their information, and add and remove favorite movies, as
-              well as to retrieve movie information, including genre and
-              director, from the existing server-side Movie API. The application
-              also allows users to filter movies by title.
+              The client-side component of the Movie API database. The
+              application is a single-page application (SPA) that allows users
+              to sign up, update their information, and add and remove favorite
+              movies, as well as to filter and retrieve movie information,
+              including genre and director, from the existing server-side Movie
+              API. It is built using React with Parcel as its build tool, and
+              uses React Bootstrap as a UI library for styling and
+              responsiveness.
+            </p>
+            <h4>The Build Process</h4>
+            <p>
+              The goal was to develop a user-friendly and feature-rich movie
+              browsing SPA using React and React Bootstrap. React was chosen as
+              the framework/library partially due to it's suitability for the
+              project, and also for learning purposes - I had never used React
+              prior to this project.
             </p>
             <p>
-              The webpage is built using React with Parcel as its build tool,
-              and uses Bootstrap as a UI library for styling and responsiveness.
+              I started by creating essential components and endpoints to enable
+              user registration, profile management, and favorite movie
+              manipulation. I then extended the functionality by integrating
+              components and endpoints that allowed users to retrieve detailed
+              movie information, including genres and directors, from the
+              existing server-side Movie API. Subsequently, I implemented
+              components and endpoints for users to filter movies by title,
+              enhancing the search experience. Finally, I applied React
+              Bootstrap styling and ensured responsiveness to optimize the
+              website's visual appeal and user experience.
+            </p>
+            <p>
+              The result of these efforts was a fully functional and responsive
+              movie browsing website. The integration of React and React
+              Bootstrap not only met the my expectations but also provided
+              valuable hands-on experience, showcasing the successful creation
+              of an interactive and visually appealing web platform. It also
+              served as a valuable learning experience, allowing me to gain
+              experience using a new approach to building SPA's and
+              demonstrating the effective use of React and React Bootstrap to
+              develop a feature-rich and responsive website.
             </p>
             <p>
               Built using: <span style="font-weight: bold">React</span>,
-              <span style="font-weight: bold">Parcel</span> and
-              <span style="font-weight: bold">Bootstrap</span>
+              <span style="font-weight: bold">Parcel</span>,
+              <span style="font-weight: bold">Bootstrap</span> and
+              <span style="font-weight: bold">JSDoc</span>
             </p>
             <p>
               Visit the site here:
@@ -175,29 +274,63 @@
           <div class="grid__item">
             <h2>Meet App</h2>
             <img src="img/meet_app_ss.PNG" alt="Meet App homepage" />
+            <h4>What is it?</h4>
             <p>
               A progressive web app (PWA) that allows you to search by location
-              to see what events are happening in that city. This will display a
-              list of events pulled from the Google Calendar API with the start
-              time, location and a button to toggle a description of the events.
-              A graphical overlay is included to see a breakdown of type and
-              number of events in each location. Login and authentication is
-              handled by Google OAuth2.0 and so requires a google account. The
-              app works offline and can be installed ad accessed directly from
-              the desktop or smartphone home screen.
+              to see what events are happening in that city. Authentication is
+              via Google and so requires a Google account, and the app can be
+              saved on the desktop or homescreen for easy access and allows
+              offline functionality.
+            </p>
+            <h4>The Build Process</h4>
+            <p>
+              The first task was to decide how to build an interface allowing
+              users to search for events by location and then fetching data from
+              a calendar API to update the app dynamically. Implementing secure
+              user authentication as well as ensuring offline functionality, and
+              enabling easy installation on desktops and smartphones were also
+              essential requirements. The project also aimed for robust testing
+              through a Test-driven development (TDD) approach throughout the
+              development process.
             </p>
             <p>
-              The app is a PWA built using React, and authenticated by OAuth2.0.
-              and Google API Services. AWS lambda serverless functions are used
-              for the authorization server. A Test-driven development (TDD)
-              technique is implemented using Jest, Gherkin and Puppeteer for
-              testing, and with a coverage rate of >=90%. The app is deployed
-              using a continuous integration (CI) pipeline.
+              To address these challenges, I built the PWA by incorporating
+              Google API Services for event data retrieval and authentication.
+              The app's frontend was designed responsively using React to handle
+              and showcase event details, including start times, locations, and
+              descriptions, with a user-friendly toggle feature. A graphical
+              overlay was implemented using a visulization library to transform
+              the API data into a visual breakdown of event types and quantities
+              in each location. AWS credentials were then set up in order to
+              implement serverless technlogy and utlize lambda functions for the
+              backend functionality. This allowed user authentication to be
+              integrated through Google OAuth2.0, requiring a Google account for
+              access. Progressive functionality was implemented along with
+              service workers to allow the app to be installable and accessible
+              directly from desktop and smartphone home screens, even when
+              offline. Test-driven development (TDD) techniques were employed
+              through, utilizing Jest, Cucumber, and Puppeteer for comprehensive
+              testing, achieving a robust coverage rate of >=90%. Continuous
+              integration (CI) pipelines were established for efficient
+              deployment and updates.
+            </p>
+            <p>
+              The result of these efforts was a fully functional and secure
+              progressive web app, with a visually appealing and user-friendly
+              interface. Seamless data retrieval from the Google Calendar API
+              and easy and secure authentication, as well as easy installation
+              and offline access, further enhanced the user experience. Rigorous
+              testing practices, including a TDD approach with Jest, Cucumber,
+              and Puppeteer, contributed to ensuring correct functionality at
+              each stage of development. The project was also a valuable
+              experience for my future development, allowing me to implementing
+              serverless functions, alongside rigourous testing methods and a CI
+              approach.
             </p>
             <p>
               Built using: <span style="font-weight: bold">React</span>,
               <span style="font-weight: bold">AWS Lambda</span>,
-              <span style="font-weight: bold">Jest (Gherkin, Puppeteer)</span>
+              <span style="font-weight: bold">Jest, Cucumber, Puppeteer</span>
               and
               <span style="font-weight: bold">Google API Services</span>
             </p>
@@ -217,22 +350,57 @@
           <div class="grid__item">
             <h2>Chat App</h2>
             <img src="img/chatapp-chat_screen.png" alt="Chat App Homescreen" />
+            <h4>What is it?</h4>
+            <p>A Chat App built with React Native, Expo and Firebase.</p>
+            <h4>The Build Process</h4>
             <p>
-              The Chat App is a native app that works with both Apple and
-              Android operating systems and is designed for mobile devices. The
-              app allows users to enter their name, choose a background and chat
-              with one another. The app uses Socket.IO to facilitate real-time
-              communication between users. Users can pick and send images using
-              the devices image library, take pictures and send them using the
-              devices camera, send their location data in a map view, and record
-              voice messages. Authentication is anonymous and is handled by
-              Firebase, as is the storage database.
+              The aim was to develop a cross-platform chat application using
+              React Native, compatible with both Apple and Android operating
+              systems. The app needed to offer a seamless mobile experience,
+              allowing users to chat in real-time, exchange images, share
+              location data, and record voice messages. Implementing features
+              like real-time communication, media sharing, and authentication
+              while ensuring smooth functionality on various devices were all
+              requirements of this project.
             </p>
             <p>
-              The app is built using React Native, and developed using Expo.
-              Google Firebase authenticates users anonymously, and Firebase is
-              used for the database and cloud storage. The chat interface and
-              functionality is created using the Gifted Chat library.
+              To begin with, I utilized React Native to build the Chat App,
+              ensuring compatibility with both Apple and Android platforms. My
+              familiarity with React Native allowed me to quickly establish the
+              app's basic structure and functionality. The app was tested
+              continuously using Expo as a simulator for iPhone and Android
+              Studio as an emulator. While Expo was staright forward to set up,
+              I had some intial problems with Android Studio. However, changing
+              the configuration on my development device resolved the main
+              issues. The chat interface and functionality were created using
+              the Gifted Chat library, providing users with the ability to
+              customize their experience by entering their name and choosing a
+              background. Real-time communication was enabled through Socket.IO,
+              allowing users to chat instantly. The app was equipped with the
+              capability to send images from the device's image library, capture
+              pictures using the device's camera, share location data via a map
+              view, and record voice messages. User authentication was handled
+              anonymously by Google Firestore, and Firebase was utilized to
+              manage the database and cloud storage seamlessly. I encountered
+              some issues with the storage of chat and media messages in
+              Firebase, and syncing those to seperate users. However, after
+              correctly implementing the configuration and id, this was quikclz
+              resolved.
+            </p>
+            <p>
+              This resulted in a versatile and user-friendly cross-platform chat
+              application. Users could interact in real-time, exchange images,
+              share location data, and record voice messages effortlessly. I set
+              out to achieve. The app's compatibility with both Apple and
+              Android devices ensured a wide user base. The integration of
+              Socket.IO facilitated seamless real-time communication, enhancing
+              the user experience. The use of Google Firestore for anonymous
+              user authentication and Firebase for database and cloud storage
+              management streamlined the app's backend processes. Overall, the
+              Chat App successfully met the project requirements, allowed me to
+              learn React Native and Firebase, while providing users with an
+              engaging and interactive platform for communication and media
+              sharing.
             </p>
             <p>
               Built using: <span style="font-weight: bold">React Native</span>,
@@ -249,24 +417,62 @@
           <div class="grid__item">
             <h2>MyFlix Angular Client</h2>
             <img src="img/myflix_angular-movie_view.png" alt="MyFlix movies" />
+            <h4>What is it?</h4>
             <p>
-              The client-side component of a movies application. The application
-              is an alternate version of the MyFlix client, and is built using
-              Angular instead of React. It also allows users to sign up, update
-              their information, and add and remove favorite movies, as well as
-              to retrieve movie information, including genre and director, from
-              the existing server-side Movie API. Angular Material is used as
-              the UI library for styling and responsiveness.
+              The client-side application for registering and viewing a movie
+              database, using TypeScript and Angular, and uses Angular Material
+              for styling. Typedoc is used to comment the codebase and for
+              documentation.
+            </p>
+            <h4>The Build Process</h4>
+            <p>
+              The objective was develop an alternative version of the MyFlix
+              React client. Using TypeScript and Angular, the goal was to create
+              a robust and secure application with enhanced functionality.
+              Overcoming the learning curve associated with Angular's structured
+              folder organization and TypeScript's strict typing was a
+              significant challenge. However, embracing these technologies was
+              crucial to ensuring robustness and security in the application. A
+              major difficulty also involved integrating user authentication
+              features, allowing users to sign up, update their information,
+              manage favorite movies, and retrieve detailed movie data from the
+              server-side Movie API.
             </p>
             <p>
-              The client is built using TypeScript and Angular, and uses Angular
-              Material for styling. Typedoc is used to comment the codebase and
-              for documentation.
+              To tackle this, I employed TypeScript and Angular to build the
+              client-side components. Angular Material was utilized as the UI
+              library, providing a visually appealing and responsive user
+              interface. Typedoc was employed to document the codebase
+              comprehensively. Familiarising myself with Angular's structured
+              folder system and TypeScript's strict typing was a challnge at
+              first, but I eventually leveraged it and defined interfaces to
+              establish a clear data structure within the application. This
+              approach significantly reduced bugs and errors in the code,
+              enhancing the overall robustness of the application. Implementing
+              user authentication functionalities, such as signup, profile
+              updating, and managing favorite movies, was an integral part of
+              the development process, but my familiarity with the Movie API
+              database and previous React client project made this a lot easier.
             </p>
+            <p>
+              The end result of these efforts was a secure, feature-rich client
+              application. By overcoming the learning curve and embracing
+              Angular's structured approach and TypeScript's strict typing, the
+              application achieved a high level of robustness and security. The
+              integration of Typedoc documentation ensured comprehensive and
+              accessible codebase documentation, facilitating maintenance and
+              future development. The application's user interface, designed
+              with Angular Material, provided a visually appealing and
+              responsive experience for users. Overall, the project successfully
+              delivered a client-side component that met the requirements and
+              provided a seamless movie browsing experience for users.
+            </p>
+
             <p>
               Built using: <span style="font-weight: bold">TypeScript</span>,
-              <span style="font-weight: bold">Angular</span> and
-              <span style="font-weight: bold">Angular Material</span>
+              <span style="font-weight: bold">Angular</span>,
+              <span style="font-weight: bold">Angular Material</span> and
+              <span style="font-weight: bold">TypeDoc</span>
             </p>
             <p>
               Visit the site here:
