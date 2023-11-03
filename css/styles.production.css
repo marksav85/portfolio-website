@@ -151,8 +151,6 @@ button:focus {
   font-weight: bold;
 }
 
-
-
 .social-media {
   display: flex;
   justify-content: center;
@@ -235,7 +233,7 @@ button:focus {
 
 .about-table th,
 .about-table td {
-    padding: 5px 5px;
+  padding: 5px 5px;
 }
 
 .about-table tbody tr {
@@ -289,7 +287,6 @@ button:focus {
   align-items: center;
   justify-content: center;
   margin: 0px 20px 0px 20px;
-
 }
 
 .contact-grid {
@@ -336,6 +333,11 @@ button:focus {
 
 /* WORK*/
 
+.work-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .projects {
   padding: 20px;
 }
@@ -356,11 +358,9 @@ button:focus {
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 33%;
   background-color: lightgray;
   padding: 5px 15px;
   width: auto;
-  min-height: 0px;
 }
 
 /* end grid fallback */
@@ -374,11 +374,12 @@ button:focus {
   }
 
   .grid__item {
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
     padding: 5px 15px;
     width: auto;
     min-height: auto;
-    max-height: 1200px;
   }
 
   .grid__item img {
@@ -393,8 +394,6 @@ button:focus {
     grid-row-end: 2;
   }
 }
-
-
 
 /* keyframes start */
 
@@ -480,13 +479,13 @@ button:focus {
   .contact-header h1 {
     font-size: 22px;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
     row-gap: 50px;
   }
-  
+
   .contact-items img {
     width: 50px;
     height: 50px;
@@ -514,28 +513,28 @@ button:focus {
   .contact-header h1 {
     font-size: 30px;
   }
-  
+
   .contact-grid {
     column-gap: 50px;
     row-gap: 100px;
     padding: 10px;
     margin-left: 0px 20px 0px 20px;
   }
-  
+
   .contact-items {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-items img {
     width: 75px;
     height: 75px;
   }
-  
+
   .grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 700px 900px 800px;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .grid__item h2 {
@@ -550,7 +549,6 @@ button:focus {
   .grid__item img {
     height: 30%;
   }
-
 }
 
 @media all and (max-width: 750px) {
@@ -585,23 +583,22 @@ button:focus {
   }
 }
 
-  @media all and (min-width: 750px) and (max-width: 1000px) {
-    .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 700px 900px;
-    }
+@media all and (min-width: 750px) and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-    .grid__item h2 {
-      font-size: 20px;
-    }
+  .grid__item h2 {
+    font-size: 20px;
+  }
 
-    .grid__item p {
-      font-size: 12px;
-      line-height: 1.2;
-    }
+  .grid__item p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 
-    .grid__item img {
-      height: 30%;
-    }
+  .grid__item img {
+    height: 30%;
   }
 }
