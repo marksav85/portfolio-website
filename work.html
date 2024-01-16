@@ -49,6 +49,7 @@
                   >Home</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="about.html"
@@ -57,6 +58,7 @@
                   >About Me</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="contact.html"
@@ -65,6 +67,7 @@
                   >Contact</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="work.html"
@@ -77,10 +80,10 @@
           </nav>
         </div>
       </header>
+      <div class="work-header"><h1>Work</h1></div>
       <div class="container-fluid" id="main-container">
-        <!-- destination container -->
         <div class="card">
-          <div class="card-header"><h2>Pokemon App</h2></div>
+          <div class="card-header"><h3>Pokemon App</h3></div>
           <div class="card-body">
             <img src="img/work/Project 1/image1.png" alt="Pokemon App" />
             <p>
@@ -90,8 +93,86 @@
               name, type, and an image. It is built using JavaScript, HTML and
               CSS with Bootstrap styling.
             </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The aim of this project was mastering JavaScript to create an
+                app that could efficiently fetch data from an API and use it
+                display it on the page using bootstrap cards and modals. The API
+                data was stored in Json format, so it needed to be retrieved
+                through the use of JavaScript API calls, and then added to the
+                DOM by creating and appending the necessary HTML elements to
+                display the data correctly.
+              </p>
+
+              <p>
+                I started on this task by creating a basic HTML layout, which I
+                could later use to insert the relevant elements and API data
+                from JavaScript. Next, I began working on JavaScript promises,
+                conducting thorough testing, and utilizing console logging to
+                identify issues in the API calls. Through this iterative
+                approach, I was able to troubleshoot issues effectively and
+                successfully pull the data from the API. Once I could
+                successfully pull the data I needed, I began integrating the API
+                data into the page by creating the necessary Bootstrap elements
+                and classes and appending them, along with the data, to the
+                page. After testing and some alterations of the code and
+                styling, this was enough to successfully meet the criteria
+                outlined at the beginning of the project. An issue I had
+                difficulty solving was related to performance - there was a
+                small but noticeable delay in displaying the information on the
+                initial load up page. After attempting a few different
+                solutions, including adjusting async requests, it seemed this
+                delay was mostly unavoidable (the time it took to get the
+                information from the API and load it onto the page). To work
+                around this issue, I added a loading screen with animated
+                progress bar which appeared on load up, and then disappeared
+                after the Pokémon data was successfully loaded.
+              </p>
+
+              <p>
+                Having achieved the aims of the project and reviewing its
+                functionality, I set about adding additional features I felt
+                would improve the project. Firstly, I added a search bar to the
+                HTML using bootstrap form classes, which would allow the user to
+                search for their favourite Pokémon. For this to work, I used a
+                filter method in the JavaScript which displayed only the Pokémon
+                matching the text typed by the user and hid the rest.
+                Additionally, I added a card color for each Pokémon based on
+                their Pokémon type – this involved first accessing and checking
+                the relevant Json data from the API, and then add the matching
+                class color to that card to give each type its own color.
+              </p>
+
+              <p>
+                The end result of these efforts was the successful creation of a
+                Pokémon database application written almost entirely in
+                JavaScript. Pulling the data successfully and dynamically
+                displaying on the page was enough to create a successful
+                project. However I think the added features of search navigation
+                and loading screen made the app a much more user-friendly
+                product.
+              </p>
+            </div>
           </div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+          <div class="card-footer">
+            <p>Built using: <span>HTML, CSS, Bootstrap, JavaScript</span></p>
+            <p>Website link: <span></span></p>
+            <p>GitHub repository: <span></span></p>
+          </div>
         </div>
         <div class="card">
           <div class="card-header"><h2>This is a header</h2></div>
