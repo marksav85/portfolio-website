@@ -391,6 +391,11 @@ button:focus {
   font-size: 12px;
 }
 
+.card-footer a {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
 /* .work-container {
   display: flex;
   flex-direction: column;
