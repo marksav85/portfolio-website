@@ -269,7 +269,7 @@
             </p>
             <p>
               Website link:
-              <span><i>see my myFlix client</i></span>
+              <span><i>see my MyFlix Movies and MyFlix Angular</i></span>
             </p>
             <p>
               GitHub repository:
@@ -376,7 +376,6 @@
               </p>
             </div>
           </div>
-
           <div class="card-footer">
             <p>
               Built using:
@@ -515,15 +514,228 @@
             </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header"><h2>This is a header</h2></div>
-          <div class="card-body"><h3>This is the body</h3></div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+
+        <!-- Project five -->
+        <div class="card project-four">
+          <div class="card-header"><h3>Chat App</h3></div>
+          <div class="card-body">
+            <img src="img/work/project5/image1.jpg" alt="Chat App" />
+            <p>
+              A WhatsApp-style chat app for mobile devices. Users can select
+              their name, background colour, and then enter the chat room, where
+              they can send messages, send and take photos, send their location
+              and record and send voice messages. As a native mobile app, it
+              must be installed and operated on a mobile device.
+            </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The aim was to develop a cross-platform chat application using
+                React Native, compatible with both Apple and Android operating
+                systems. The app needed to offer a seamless mobile experience,
+                allowing users to chat in real-time, exchange images, share
+                location data, and record voice messages. Implementing features
+                like real-time communication, media sharing, and authentication
+                while ensuring smooth functionality on various devices were all
+                requirements of this project.
+              </p>
+
+              <p>
+                To begin with, I utilized React Native to build the Chat App,
+                ensuring compatibility with both Apple and Android platforms. My
+                familiarity with React Native allowed me to quickly establish
+                the app's basic structure and functionality. The app was tested
+                continuously using Expo as a simulator for iPhone and Android
+                Studio as an emulator. While Expo was straight forward to set
+                up, I had some initial problems with Android Studio. To resolve
+                this required referring to guides and documentation to change
+                the settings on my device. After some perseverance I eventually
+                got it to work successfully so that I could connect and test my
+                app. The chat interface and functionality were created using the
+                Gifted Chat library, as it integrated well with React Native and
+                provided users with the ability to customize their experience by
+                entering their name and choosing a background. Real-time
+                communication was enabled through Socket.IO, allowing users to
+                chat instantly. I then set up the functionality to send images
+                from the device's image library, capture pictures using the
+                device's camera and share location data via a map view. With
+                this complete, I decided on Google Firebase as a NoSQL document
+                database to manage the cloud storage, and asyncStorage to allow
+                access to message when offline. With this, user could log in and
+                out anonymously and see their chat history based on their ID and
+                retrieve previous messages and media both on and offline.
+              </p>
+
+              <p>
+                An additional feature I implemented was voice recordings. As
+                most devices now come with this feature, it was accessible using
+                the expo-av library. It was well documented and allowed for easy
+                integration alongside the already implemented features.
+              </p>
+
+              <p>
+                This resulted in a versatile and user-friendly cross-platform
+                chat application. Users could interact in real-time, exchange
+                images, share location data, and record voice messages
+                effortlessly, achieving all aims of the project. The app's
+                compatibility with both Apple and Android devices ensured a wide
+                user base. The integration of Socket.IO facilitated seamless
+                real-time communication, enhancing the user experience. The use
+                of Google Firestore for anonymous user authentication and
+                Firebase for database and cloud storage management streamlined
+                the app's backend processes. Overall, the Chat App successfully
+                met the project requirements, allowed me to learn React Native
+                and Firebase, while providing users with an engaging and
+                interactive platform for communication and media sharing.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>React Native, Expo, Android Studio, Firebase</span>
+            </p>
+            <p>
+              Website link:
+              <span></span>
+            </p>
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/chat-app</span>
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-header"><h2>This is a header</h2></div>
-          <div class="card-body"><h3>This is the body</h3></div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+
+        <!-- Project six -->
+        <div class="card project-six">
+          <div class="card-header"><h3>MyFlix Angular</h3></div>
+          <div class="card-body">
+            <img src="img/work/project6/image1.jpg" alt="MyFlix Angular" />
+            <p>
+              The client-side application for registering and viewing a movie
+              database, using TypeScript and Angular, and uses Angular Material
+              for styling. Typedoc is used to comment the codebase and for
+              documentation.
+            </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The objective was to develop an alternative client-side app to
+                the MyFlix movie database. Using TypeScript and Angular, the
+                goal was to create a robust and secure application with enhanced
+                functionality. Overcoming the learning curve associated with
+                Angular's structured folder organization and TypeScript's strict
+                typing was an important challenge but crucial to ensuring
+                robustness and security in the application. The app also needed
+                to integrate user authentication features, allowing users to
+                sign up, update their information, manage favourite movies, and
+                retrieve detailed movie data from the server-side movie
+                database.
+              </p>
+
+              <p>
+                Once the project was set up, I started by creating the main
+                movie list component, setting up the required logic to fetch the
+                movies from the database and feed them into the component and
+                then into the detailed movie component. The basic page layouts
+                were built using HTML but using Angular Material classes and
+                styles, making the layout quick and simple to create and
+                offering a visually appealing and responsive user interface.
+                Familiarising myself with Angular's structured folder system and
+                Angular Material was new at first, but they are both well
+                documented. Using Typescript, the logic to pull API data was
+                placed in a fetch-api file accessible to all components via
+                import, whereas the component functions were placed in the
+                relevant component folder, which I found structurally logical
+                and easy to follow. TypeScript's strict typing took some getting
+                used to, but it is also well documented and I found it
+                significantly reduced bugs and errors in the code, so required
+                less debugging. Once the movie components were complete, I then
+                set about creating the welcome page, login, and user
+                registration components. Using Angular Material for the UI and
+                importing much of the component logic from the already created
+                fetch-api made this a relatively painless task. Similar to the
+                React client, web token authentication was used to allow the
+                user to login. A navigation bar was then added using routerLink
+                to allow navigation between pages. The last essential component
+                was the profile page including account deletion, displaying user
+                information and update user information. Like previous
+                components, Angular Material was used and CRUD operation logic
+                using TypeScript created to update user information and for the
+                account deletion.
+              </p>
+
+              <p>
+                With all components completed, I decided on making some added
+                features to make the site more appealing. The first was to add a
+                favourites button alongside each the movie details for each
+                movie. This could be used to favourite or unfavourite movies. I
+                then added an extra section within the profile component, that
+                would display the favourited movies – essentially a favourites
+                list. Further user experience improvements were added with
+                customised CSS stylings alongside the Angular Material layout to
+                give the app its own modern and unique look.
+              </p>
+
+              <p>
+                The finished application was a user-friendly and modern
+                client-side movie application. By overcoming the learning curve
+                and embracing Angular's structured approach and TypeScript's
+                strict typing, the application achieved a high level of
+                robustness and security. Typedoc documentation was used
+                throughout, ensuring comprehensive and accessible codebase
+                documentation, facilitating maintenance and future development.
+                The application's user interface, designed with Angular
+                Material, provided a visually appealing and responsive
+                experience for users. Overall, the project successfully
+                delivered a client-side component that met the requirements and
+                provided a seamless movie browsing experience for users.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>Angular, Angular Material, TypeScript, TypeDoc</span>
+            </p>
+            <p>
+              Website link:
+              <span
+                >https://marksav85.github.io/myFlix-Angular-client/welcome</span
+              >
+            </p>
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/myFlix-Angular-client</span>
+            </p>
+          </div>
         </div>
       </div>
 
