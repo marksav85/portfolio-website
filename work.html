@@ -267,7 +267,10 @@
                 >JavaScript, Node.js, Express, MongoDB, Mongoose, Postman</span
               >
             </p>
-
+            <p>
+              Website link:
+              <span><i>see my myFlix client</i></span>
+            </p>
             <p>
               GitHub repository:
               <span>https://github.com/marksav85/movie-api</span>
@@ -277,9 +280,117 @@
 
         <!-- Project three -->
         <div class="card project-three">
-          <div class="card-header"><h2>This is a header</h2></div>
-          <div class="card-body"><h3>This is the body</h3></div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+          <div class="card-header"><h3>MyFlix Movies</h3></div>
+          <div class="card-body">
+            <img src="img/work/project3/image1.jpg" alt="Pokemon App" />
+            <p>
+              The client-side component of a movies application. The single-page
+              application (SPA) that allows users to sign up, view movie data
+              and update their information, search and add and remove favorite
+              movies.
+            </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The goal was to develop a user-friendly and feature-rich movie
+                browsing SPA using React and React Bootstrap. The app should
+                allow users to register, and registered users to login to the
+                app. Once logged in, the users would be able browse a list of
+                information, click on a movie to see more detailed information,
+                and navigate to a profile page where to they can view and update
+                their account information, as well as delete their account.
+              </p>
+
+              <p>
+                React was chosen for this project due to its reputation for
+                providing smooth and responsive performance, being a
+                well-documented and supported framework/library and its
+                client-side rendering abilities. I set the project up using
+                Parcel as the build tool, as it a simple, and includes many
+                minifiers and optimisations which make it suitable for small
+                projects. Once the project was set up, I started by creating the
+                main page component, followed by the main movie list component,
+                setting up the required logic to fetch the movies from the
+                database and feed them into the component and then into the
+                detailed movie component. React Bootstrap card classes were used
+                to display the information and give it basic styling. Once this
+                was complete, I then set about creating the login and user
+                registration components. React router was used to ensure
+                visitors without a valid token would be redirected to this
+                welcome page. React bootstrap forms were used to allow user
+                input and then the logic created to send and retrieve the
+                relevant CRUD operation on the movie API database. The retrieved
+                token would be stored in the browser, which would then allow the
+                user to login. The last essential component was the profile
+                page. This included a display to show users information, a form
+                to update users’ information and a button to delete the account.
+                Implementing this user updating form was perhaps the most
+                challenging part of the project. Updating and encrypting the
+                data sent to the server and returning and updating the user
+                information on the same page proved difficult. However, I found
+                it easier to resolve this by separating the page into several
+                subcomponents to display user information and the update user
+                form. This way I could pass the new data via props, which
+                handled and resolved issues with updating the user info almost
+                seamlessly.
+              </p>
+
+              <p>
+                Having completed the essential components and tested the
+                functionality, I decided on making some extra improvements to
+                enhance the project. The first was to enhance user experience
+                and security by applying validation logic to the forms, help
+                preventing scripting attacks and giving feedback to the user for
+                invalid inputs. Further user experience improvements were used
+                with the use of React bootstrap alerts, updating with relevant
+                error messages. I also added a favourites list to the profile
+                page by adding a favourite button to the list of movies. Once a
+                user clicked the favourite button, the movie would be added to a
+                new list which would appear in the profile section in a new
+                subcomponent. They could also remove the movie from the list but
+                clicking on the same button. Lastly, although React bootstrap
+                came without its own styling, I added customised CSS stylings to
+                give the app its own modern and unique look.
+              </p>
+
+              <p>
+                The end product was a satisfying integration of React and React
+                Bootstrap which not only met the project expectations but also
+                provided valuable experience, showcasing the successful creation
+                of an interactive, responsive and visually appealing web
+                platform in combination with up-to-date encryption and security
+                standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>React, React Bootstrap, JavaScript, Parcel, JSDoc</span>
+            </p>
+            <p>
+              Website link:
+              <span>https://my-flix-films.netlify.app/login</span>
+            </p>
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/myFlix-client</span>
+            </p>
+          </div>
         </div>
         <div class="card">
           <div class="card-header"><h2>This is a header</h2></div>
