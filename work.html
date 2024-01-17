@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
     <title>My Portfolio: My Work</title>
@@ -43,6 +49,7 @@
                   >Home</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="about.html"
@@ -51,6 +58,7 @@
                   >About Me</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="contact.html"
@@ -59,6 +67,7 @@
                   >Contact</a
                 >
               </li>
+
               <li role="presentation">
                 <a
                   href="work.html"
@@ -71,7 +80,659 @@
           </nav>
         </div>
       </header>
-      <section class="projects">
+      <div class="work-header"><h1>Work</h1></div>
+      <div class="container-fluid" id="main-container">
+        <!-- Project 1 -->
+        <div class="card project-one">
+          <div class="card-header"><h3>Pokemon App</h3></div>
+          <div class="card-body">
+            <img src="img/work/project1/image1.jpg" alt="Pokemon App" />
+            <div class="body-text-container">
+              <p>
+                An app that dynamically populates the page with Pokemon data
+                from an API. The app allows you to search the list for a Pokemon
+                by name, and when clicked on displays a modal box with the
+                Pokemon's name, type, and an image. It is built using
+                JavaScript, HTML and CSS with Bootstrap styling.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The aim of this project was mastering JavaScript to create an
+                app that could efficiently fetch data from an API and use it
+                display it on the page using bootstrap cards and modals. The API
+                data was stored in Json format, so it needed to be retrieved
+                through the use of JavaScript API calls, and then added to the
+                DOM by creating and appending the necessary HTML elements to
+                display the data correctly.
+              </p>
+
+              <p>
+                I started on this task by creating a basic HTML layout, which I
+                could later use to insert the relevant elements and API data
+                from JavaScript. Next, I began working on JavaScript promises,
+                conducting thorough testing, and utilizing console logging to
+                identify issues in the API calls. Through this iterative
+                approach, I was able to troubleshoot issues effectively and
+                successfully pull the data from the API. Once I could
+                successfully pull the data I needed, I began integrating the API
+                data into the page by creating the necessary Bootstrap elements
+                and classes and appending them, along with the data, to the
+                page. After testing and some alterations of the code and
+                styling, this was enough to successfully meet the criteria
+                outlined at the beginning of the project. An issue I had
+                difficulty solving was related to performance - there was a
+                small but noticeable delay in displaying the information on the
+                initial load up page. After attempting a few different
+                solutions, including adjusting async requests, it seemed this
+                delay was mostly unavoidable (the time it took to get the
+                information from the API and load it onto the page). To work
+                around this issue, I added a loading screen with animated
+                progress bar which appeared on load up, and then disappeared
+                after the Pokémon data was successfully loaded.
+              </p>
+
+              <p>
+                Having achieved the aims of the project and reviewing its
+                functionality, I set about adding additional features I felt
+                would improve the project. Firstly, I added a search bar to the
+                HTML using bootstrap form classes, which would allow the user to
+                search for their favourite Pokémon. For this to work, I used a
+                filter method in the JavaScript which displayed only the Pokémon
+                matching the text typed by the user and hid the rest.
+                Additionally, I added a card color for each Pokémon based on
+                their Pokémon type – this involved first accessing and checking
+                the relevant Json data from the API, and then add the matching
+                class color to that card to give each type its own color.
+              </p>
+
+              <p>
+                The end result of these efforts was the successful creation of a
+                Pokémon database application written almost entirely in
+                JavaScript. Pulling the data successfully and dynamically
+                displaying on the page was enough to create a successful
+                project. However I think the added features of search navigation
+                and loading screen made the app a much more user-friendly
+                product.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>Built using: <span>HTML, CSS, Bootstrap, JavaScript</span></p>
+
+            <a href="https://marksav85.github.io/pokedex-app/"
+              ><span>Pokedex App</span></a
+            >
+            <a href="https://github.com/marksav85/pokedex-app"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project two -->
+        <div class="card project-two">
+          <div class="card-header"><h3>Movie API</h3></div>
+          <div class="card-body">
+            <img src="img/work/project2/image1.jpg" alt="MongoDB" />
+            <div class="body-text-container">
+              <p>
+                The server-side component of an IMDB style movies application.
+                It contains a database with information for various movies such
+                as the genre, description, image cover etc, information on
+                registered users (including data security methods), and
+                endpoints set up to allow client -side applications to interact
+                with it.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The main requirements of this project was to build a database of
+                movies and their information. The database had to be accessible
+                from client-side applications and allow for CRUD operations. The
+                database also needed to allow client-side applications to store
+                and retrieve data on registered users, enabling them to register
+                and login.
+              </p>
+
+              <p>
+                I started by utilizing Node.js and Express to create essential
+                requests and endpoints, allowing for the relevant CRUD requests
+                the client-side application would need. The next step was to
+                build the database. For this, MongoDB was chosen due to its
+                reliability and performance but also for its flexibility as a
+                relational database. This allowed for the creation of the
+                project’s own schema, which was created using Mongoose. Once the
+                schema, endpoints and collections in MongoDB were set up, I used
+                postman to test CRUD operations of the database via the
+                specified endpoints. However, a key component was still missing
+                when performing CRUD operations on the user – user
+                authentication and validation. This was handled by JSON web
+                tokens, which generated a token for each user. This in turn
+                required the middleware package Passport that works with express
+                to validate tokens and authenticate users. To ensure its
+                functionality, I once again used postman to test the endpoints.
+              </p>
+
+              <p>
+                However, one key improvement I wanted to make also posed the
+                biggest challenge - a method of encryption to improve security
+                during authentication and authorisation. To tackle this, I
+                turned to bcrypt which enabled password hashing and vastly
+                enhanced the security of registered users. Setting up bycrypt to
+                hash passwords correctly proved difficult. Fortunately, however,
+                it has extensive documentation I could refer to throughout.
+              </p>
+
+              <p>
+                The conclusion was a fully functional and secure database
+                system. The backend infrastructure enabled the storage and
+                retrieval of movie and user information. Token-based
+                authorization and authentication mechanisms provided a high
+                level of data security, ensuring user privacy. Additionally, due
+                to the complexity of the steps required during implementation,
+                and to enhance code readability and maintainability, I added
+                JSDoc comments, providing comprehensive documentation for the
+                codebase.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span
+                >JavaScript, Node.js, Express, MongoDB, Mongoose, Postman</span
+              >
+            </p>
+
+            <a href="https://github.com/marksav85/movie-api"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project three -->
+        <div class="card project-three">
+          <div class="card-header"><h3>MyFlix Movies</h3></div>
+          <div class="card-body">
+            <img src="img/work/project3/image1.jpg" alt="MyFlix Movies" />
+            <div class="body-text-container">
+              <p>
+                The client-side component of a movies application. The
+                single-page application (SPA) that allows users to sign up, view
+                movie data and update their information, search and add and
+                remove favorite movies.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The goal was to develop a user-friendly and feature-rich movie
+                browsing SPA using React and React Bootstrap. The app should
+                allow users to register, and registered users to login to the
+                app. Once logged in, the users would be able browse a list of
+                information, click on a movie to see more detailed information,
+                and navigate to a profile page where to they can view and update
+                their account information, as well as delete their account.
+              </p>
+
+              <p>
+                React was chosen for this project due to its reputation for
+                providing smooth and responsive performance, being a
+                well-documented and supported framework/library and its
+                client-side rendering abilities. I set the project up using
+                Parcel as the build tool, as it a simple, and includes many
+                minifiers and optimisations which make it suitable for small
+                projects. Once the project was set up, I started by creating the
+                main page component, followed by the main movie list component,
+                setting up the required logic to fetch the movies from the
+                database and feed them into the component and then into the
+                detailed movie component. React Bootstrap card classes were used
+                to display the information and give it basic styling. Once this
+                was complete, I then set about creating the login and user
+                registration components. React router was used to ensure
+                visitors without a valid token would be redirected to this
+                welcome page. React bootstrap forms were used to allow user
+                input and then the logic created to send and retrieve the
+                relevant CRUD operation on the movie API database. The retrieved
+                token would be stored in the browser, which would then allow the
+                user to login. The last essential component was the profile
+                page. This included a display to show users information, a form
+                to update users’ information and a button to delete the account.
+                Implementing this user updating form was perhaps the most
+                challenging part of the project. Updating and encrypting the
+                data sent to the server and returning and updating the user
+                information on the same page proved difficult. However, I found
+                it easier to resolve this by separating the page into several
+                subcomponents to display user information and the update user
+                form. This way I could pass the new data via props, which
+                handled and resolved issues with updating the user info almost
+                seamlessly.
+              </p>
+
+              <p>
+                Having completed the essential components and tested the
+                functionality, I decided on making some extra improvements to
+                enhance the project. The first was to enhance user experience
+                and security by applying validation logic to the forms, help
+                preventing scripting attacks and giving feedback to the user for
+                invalid inputs. Further user experience improvements were used
+                with the use of React bootstrap alerts, updating with relevant
+                error messages. I also added a favourites list to the profile
+                page by adding a favourite button to the list of movies. Once a
+                user clicked the favourite button, the movie would be added to a
+                new list which would appear in the profile section in a new
+                subcomponent. They could also remove the movie from the list but
+                clicking on the same button. Lastly, although React bootstrap
+                came without its own styling, I added customised CSS stylings to
+                give the app its own modern and unique look.
+              </p>
+
+              <p>
+                The end product was a satisfying integration of React and React
+                Bootstrap which not only met the project expectations but also
+                provided valuable experience, showcasing the successful creation
+                of an interactive, responsive and visually appealing web
+                platform in combination with up-to-date encryption and security
+                standards.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>React, React Bootstrap, JavaScript, Parcel, JSDoc</span>
+            </p>
+            <a href="https://my-flix-films.netlify.app/login"
+              ><span>MyFlix Movies</span></a
+            >
+            <a href="https://github.com/marksav85/myFlix-client"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project four -->
+        <div class="card project-four">
+          <div class="card-header"><h3>Meet App</h3></div>
+          <div class="card-body">
+            <img src="img/work/project4/image1.jpg" alt="Meet App" />
+            <div class="body-text-container">
+              <p>
+                A progressive web app (PWA) that allows you to search by
+                location to see what events are happening in that city.
+                Authentication is via Google and so requires a Google account,
+                and the app can be saved on the desktop or home screen for easy
+                access and allows offline functionality
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The aims of this project were to create a progressive web app
+                (PWA) that could be accessed both online via the web but also
+                saved to desktop or smartphone screen as a web app. As a PWA,
+                the app would offer quick loading, offline functionality, and
+                cross-platform functionality. Access to the app would be via
+                Google OAuth2.0. The app main page would allow users to search
+                via list of cities, and an API request would pull a list of
+                events occurring at that location and display them on the page.
+                The display would show the event information in list format and
+                further details revealed from a drop-down menu when clicked on.
+                Additionally, continuous testing would be deployed in this
+                project to ensure automated and consistent code.
+              </p>
+
+              <p>
+                I began with the app's frontend, once again using React and
+                React bootstrap due to its simplicity and capability of handling
+                responsively SPAs. The initial components were set up to search
+                by city using a user input form, and display event details,
+                including start times, locations, and descriptions, with a
+                user-friendly toggle feature to show further information
+                regarding the event. Using dummy data set up for testing
+                purposes, I was then able to feed data into the app to ensure it
+                displayed correctly. At this point, after setting up the basic
+                structure of the app, and following a Test-driven development
+                (TDD) technique, I began writing unit tests followed by
+                integration tests, to ensure the parts worked individually and
+                together. JEST was chosen as the testing suite as it is well
+                documented and can be used for both test approaches. I then
+                began writing acceptance tests using cucumber and implementing
+                the relevant features and then end-to-end tests using puppeteer.
+                I found ensuring all that all tests passed correctly quite
+                challenging, as writing the test, and then implementing the
+                correct code to make the test pass was quite time consuming.
+                However, using online resources such as cheat sheets helped
+                enormously with speeding this process up and making sure my
+                tests were written correctly. Ensuring that all tests passed
+                with the dummy data, I then began working on the backend
+                requests to obtain the API data from Google Calendar API. Rather
+                than using traditional server architecture for this, Serverless
+                lambda functions hosted by AWS were used due to their
+                availability and low/no maintenance. This was connected to
+                Google Services allowing for authentication via Google OAuth2.0.
+                With this, a user could login via Google and see the relevant
+                events pulled from Google Calendar API. Ensuring all tests
+                passed, I could then begin implementing offline functionality
+                and ‘save to desktop/home screen’ via the use of service
+                workers.
+              </p>
+
+              <p>
+                Despite passing all tests, and achieving all the objective
+                functionality, I still felt the app wasn’t as attractive as it
+                could be. To resolve this, a graphical overlay was implemented
+                using a visualization library to transform the API data into a
+                visual breakdown of event types and quantities in each location,
+                along side the list view already implemented. This made the app
+                more colourful and visually interesting. Along side some custom
+                styling, the app looked much more appealing. The extra graphical
+                overlay then had to be written into the tests to ensure it was
+                included and functioned as intended. The final step was using
+                google lighthouse PWA checklist and an online performance tool
+                to ensure the app performed as expected.
+              </p>
+
+              <p>
+                The final product was a visually pleasing and responsive PWA
+                with instant loading, offline support, push notifications, “add
+                to home screen” prompt, and cross-platform compatibility. The
+                serverless function allowed for easy a low maintenance backend
+                option and the TDD approach resulted in all errors being caught
+                and eliminated during the build process.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span
+                >React, React Bootstrap, JavaScript, AWS Lambda, Google API
+                Services, Jest</span
+              >
+            </p>
+            <a href="https://marksav85.github.io/meet/"><span>Meet</span></a>
+            <a href="https://github.com/marksav85/meet"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project five -->
+        <div class="card project-four">
+          <div class="card-header"><h3>Chat App</h3></div>
+          <div class="card-body">
+            <img src="img/work/project5/image1.jpg" alt="Chat App" />
+            <div class="body-text-container">
+              <p>
+                A WhatsApp-style chat app for mobile devices. Users can select
+                their name, background colour, and then enter the chat room,
+                where they can send messages, send and take photos, send their
+                location and record and send voice messages. As a native mobile
+                app, it must be installed and operated on a mobile device.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The aim was to develop a cross-platform chat application using
+                React Native, compatible with both Apple and Android operating
+                systems. The app needed to offer a seamless mobile experience,
+                allowing users to chat in real-time, exchange images, share
+                location data, and record voice messages. Implementing features
+                like real-time communication, media sharing, and authentication
+                while ensuring smooth functionality on various devices were all
+                requirements of this project.
+              </p>
+
+              <p>
+                To begin with, I utilized React Native to build the Chat App,
+                ensuring compatibility with both Apple and Android platforms. My
+                familiarity with React Native allowed me to quickly establish
+                the app's basic structure and functionality. The app was tested
+                continuously using Expo as a simulator for iPhone and Android
+                Studio as an emulator. While Expo was straight forward to set
+                up, I had some initial problems with Android Studio. To resolve
+                this required referring to guides and documentation to change
+                the settings on my device. After some perseverance I eventually
+                got it to work successfully so that I could connect and test my
+                app. The chat interface and functionality were created using the
+                Gifted Chat library, as it integrated well with React Native and
+                provided users with the ability to customize their experience by
+                entering their name and choosing a background. Real-time
+                communication was enabled through Socket.IO, allowing users to
+                chat instantly. I then set up the functionality to send images
+                from the device's image library, capture pictures using the
+                device's camera and share location data via a map view. With
+                this complete, I decided on Google Firebase as a NoSQL document
+                database to manage the cloud storage, and asyncStorage to allow
+                access to message when offline. With this, user could log in and
+                out anonymously and see their chat history based on their ID and
+                retrieve previous messages and media both on and offline.
+              </p>
+
+              <p>
+                An additional feature I implemented was voice recordings. As
+                most devices now come with this feature, it was accessible using
+                the expo-av library. It was well documented and allowed for easy
+                integration alongside the already implemented features.
+              </p>
+
+              <p>
+                This resulted in a versatile and user-friendly cross-platform
+                chat application. Users could interact in real-time, exchange
+                images, share location data, and record voice messages
+                effortlessly, achieving all aims of the project. The app's
+                compatibility with both Apple and Android devices ensured a wide
+                user base. The integration of Socket.IO facilitated seamless
+                real-time communication, enhancing the user experience. The use
+                of Google Firestore for anonymous user authentication and
+                Firebase for database and cloud storage management streamlined
+                the app's backend processes. Overall, the Chat App successfully
+                met the project requirements, allowed me to learn React Native
+                and Firebase, while providing users with an engaging and
+                interactive platform for communication and media sharing.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>React Native, Expo, Android Studio, Firebase</span>
+            </p>
+            <a href=""><span></span></a>
+            <a href="https://github.com/marksav85/chat-app"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project six -->
+        <div class="card project-six">
+          <div class="card-header"><h3>MyFlix Angular</h3></div>
+          <div class="card-body">
+            <img src="img/work/project6/image1.jpg" alt="MyFlix Angular" />
+            <div class="body-text-container">
+              <p>
+                The client-side application for registering and viewing a movie
+                database, using TypeScript and Angular, and uses Angular
+                Material for styling. Typedoc is used to comment the codebase
+                and for documentation.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The objective was to develop an alternative client-side app to
+                the MyFlix movie database. Using TypeScript and Angular, the
+                goal was to create a robust and secure application with enhanced
+                functionality. Overcoming the learning curve associated with
+                Angular's structured folder organization and TypeScript's strict
+                typing was an important challenge but crucial to ensuring
+                robustness and security in the application. The app also needed
+                to integrate user authentication features, allowing users to
+                sign up, update their information, manage favourite movies, and
+                retrieve detailed movie data from the server-side movie
+                database.
+              </p>
+
+              <p>
+                Once the project was set up, I started by creating the main
+                movie list component, setting up the required logic to fetch the
+                movies from the database and feed them into the component and
+                then into the detailed movie component. The basic page layouts
+                were built using HTML but using Angular Material classes and
+                styles, making the layout quick and simple to create and
+                offering a visually appealing and responsive user interface.
+                Familiarising myself with Angular's structured folder system and
+                Angular Material was new at first, but they are both well
+                documented. Using Typescript, the logic to pull API data was
+                placed in a fetch-api file accessible to all components via
+                import, whereas the component functions were placed in the
+                relevant component folder, which I found structurally logical
+                and easy to follow. TypeScript's strict typing took some getting
+                used to, but it is also well documented and I found it
+                significantly reduced bugs and errors in the code, so required
+                less debugging. Once the movie components were complete, I then
+                set about creating the welcome page, login, and user
+                registration components. Using Angular Material for the UI and
+                importing much of the component logic from the already created
+                fetch-api made this a relatively painless task. Similar to the
+                React client, web token authentication was used to allow the
+                user to login. A navigation bar was then added using routerLink
+                to allow navigation between pages. The last essential component
+                was the profile page including account deletion, displaying user
+                information and update user information. Like previous
+                components, Angular Material was used and CRUD operation logic
+                using TypeScript created to update user information and for the
+                account deletion.
+              </p>
+
+              <p>
+                With all components completed, I decided on making some added
+                features to make the site more appealing. The first was to add a
+                favourites button alongside each the movie details for each
+                movie. This could be used to favourite or unfavourite movies. I
+                then added an extra section within the profile component, that
+                would display the favourited movies – essentially a favourites
+                list. Further user experience improvements were added with
+                customised CSS stylings alongside the Angular Material layout to
+                give the app its own modern and unique look.
+              </p>
+
+              <p>
+                The finished application was a user-friendly and modern
+                client-side movie application. By overcoming the learning curve
+                and embracing Angular's structured approach and TypeScript's
+                strict typing, the application achieved a high level of
+                robustness and security. Typedoc documentation was used
+                throughout, ensuring comprehensive and accessible codebase
+                documentation, facilitating maintenance and future development.
+                The application's user interface, designed with Angular
+                Material, provided a visually appealing and responsive
+                experience for users. Overall, the project successfully
+                delivered a client-side component that met the requirements and
+                provided a seamless movie browsing experience for users.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>Angular, Angular Material, TypeScript, TypeDoc</span>
+            </p>
+            <a href="https://marksav85.github.io/myFlix-Angular-client/welcome"
+              ><span>MyFlix Angular</span></a
+            >
+            <a href="https://github.com/marksav85/myFlix-Angular-client"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- <section class="projects">
         <h1>My Work Projects</h1>
         <div class="grid">
           <div class="grid__item">
@@ -80,7 +741,7 @@
               src="img/work/pokedex-main_page.png"
               alt="Pokedex App homepage"
             />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>
               An app that dynamically populates the page with Pokemon data from
               an API. The app allows you to search the list for a Pokemon by
@@ -88,7 +749,7 @@
               name, type, and an image. It is built using JavaScript, HTML and
               CSS with Bootstrap styling.
             </p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The aim of this project was mastering JavaScript to create an app
               that could efficiently fetch data from an API and display it
@@ -147,7 +808,7 @@
           <div class="grid__item">
             <h2>Movie API</h2>
             <img src="img/work/myflix_api-db_view.png" alt="MongoDB database" />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>
               The server-side component of a movies application. The webpage is
               hosted via Heroku and built using Node.js, Express using REST
@@ -158,7 +819,7 @@
               itself holds information on movies, and users, and allows for
               basic CRUD operations via the specified endpoints.
             </p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The purpose in building this database was to establish secure and
               efficient communication between the frontend and backend
@@ -213,7 +874,7 @@
               src="img/work/myflix_react-movie_view.png"
               alt="MyFlix movies"
             />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>
               The client-side component of the Movie API database. The
               application is a single-page application (SPA) that allows users
@@ -224,7 +885,7 @@
               uses React Bootstrap as a UI library for styling and
               responsiveness.
             </p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The goal was to develop a user-friendly and feature-rich movie
               browsing SPA using React and React Bootstrap. React was chosen as
@@ -279,7 +940,7 @@
           <div class="grid__item">
             <h2>Meet App</h2>
             <img src="img/work/meet_app_ss.PNG" alt="Meet App homepage" />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>
               A progressive web app (PWA) that allows you to search by location
               to see what events are happening in that city. Authentication is
@@ -287,7 +948,7 @@
               saved on the desktop or homescreen for easy access and allows
               offline functionality.
             </p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The first task was to decide how to build an interface allowing
               users to search for events by location and then fetching data from
@@ -358,9 +1019,9 @@
               src="img/work/chatapp-chat_screen.png"
               alt="Chat App Homescreen"
             />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>A Chat App built with React Native, Expo and Firebase.</p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The aim was to develop a cross-platform chat application using
               React Native, compatible with both Apple and Android operating
@@ -428,14 +1089,14 @@
               src="img/work/myflix_angular-movie_view.png"
               alt="MyFlix movies"
             />
-            <h4>What is it?</h4>
+            <h5>What is it?</h5>
             <p>
               The client-side application for registering and viewing a movie
               database, using TypeScript and Angular, and uses Angular Material
               for styling. Typedoc is used to comment the codebase and for
               documentation.
             </p>
-            <h4>The Build Process</h4>
+            <h5>The Build Process</h5>
             <p>
               The objective was develop an alternative version of the MyFlix
               React client. Using TypeScript and Angular, the goal was to create
@@ -503,7 +1164,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
@@ -520,5 +1181,10 @@
       </footer>
     </div>
     <script src="js/tota11y.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
