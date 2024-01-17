@@ -82,10 +82,11 @@
       </header>
       <div class="work-header"><h1>Work</h1></div>
       <div class="container-fluid" id="main-container">
-        <div class="card">
+        <!-- Project 1 -->
+        <div class="card project-one">
           <div class="card-header"><h3>Pokemon App</h3></div>
           <div class="card-body">
-            <img src="img/work/Project 1/image1.png" alt="Pokemon App" />
+            <img src="img/work/project1/image1.jpg" alt="Pokemon App" />
             <p>
               An app that dynamically populates the page with Pokemon data from
               an API. The app allows you to search the list for a Pokemon by
@@ -170,16 +171,112 @@
           </div>
           <div class="card-footer">
             <p>Built using: <span>HTML, CSS, Bootstrap, JavaScript</span></p>
-            <p>Website link: <span></span></p>
-            <p>GitHub repository: <span></span></p>
+            <p>
+              Website link:
+              <span>https://marksav85.github.io/pokedex-app/</span>
+            </p>
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/pokedex-app</span>
+            </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header"><h2>This is a header</h2></div>
-          <div class="card-body"><h3>This is the body</h3></div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+
+        <!-- Project two -->
+        <div class="card project-two">
+          <div class="card-header"><h3>Movie API</h3></div>
+          <div class="card-body">
+            <img src="img/work/project2/image1.jpg" alt="Pokemon App" />
+            <p>
+              The server-side component of an IMDB style movies application. It
+              contains a database with information for various movies such as
+              the genre, description, image cover etc, information on registered
+              users (including data security methods), and endpoints set up to
+              allow client -side applications to interact with it.
+            </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The main requirements of this project was to build a database of
+                movies and their information. The database had to be accessible
+                from client-side applications and allow for CRUD operations. The
+                database also needed to allow client-side applications to store
+                and retrieve data on registered users, enabling them to register
+                and login.
+              </p>
+
+              <p>
+                I started by utilizing Node.js and Express to create essential
+                requests and endpoints, allowing for the relevant CRUD requests
+                the client-side application would need. The next step was to
+                build the database. For this, MongoDB was chosen due to its
+                reliability and performance but also for its flexibility as a
+                relational database. This allowed for the creation of the
+                project’s own schema, which was created using Mongoose. Once the
+                schema, endpoints and collections in MongoDB were set up, I used
+                postman to test CRUD operations of the database via the
+                specified endpoints. However, a key component was still missing
+                when performing CRUD operations on the user – user
+                authentication and validation. This was handled by JSON web
+                tokens, which generated a token for each user. This in turn
+                required the middleware package Passport that works with express
+                to validate tokens and authenticate users. To ensure its
+                functionality, I once again used postman to test the endpoints.
+              </p>
+
+              <p>
+                However, one key improvement I wanted to make also posed the
+                biggest challenge - a method of encryption to improve security
+                during authentication and authorisation. To tackle this, I
+                turned to bcrypt which enabled password hashing and vastly
+                enhanced the security of registered users. Setting up bycrypt to
+                hash passwords correctly proved difficult. Fortunately, however,
+                it has extensive documentation I could refer to throughout.
+              </p>
+
+              <p>
+                The conclusion was a fully functional and secure database
+                system. The backend infrastructure enabled the storage and
+                retrieval of movie and user information. Token-based
+                authorization and authentication mechanisms provided a high
+                level of data security, ensuring user privacy. Additionally, due
+                to the complexity of the steps required during implementation,
+                and to enhance code readability and maintainability, I added
+                JSDoc comments, providing comprehensive documentation for the
+                codebase.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span
+                >JavaScript, Node.js, Express, MongoDB, Mongoose, Postman</span
+              >
+            </p>
+
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/movie-api</span>
+            </p>
+          </div>
         </div>
-        <div class="card">
+
+        <!-- Project three -->
+        <div class="card project-three">
           <div class="card-header"><h2>This is a header</h2></div>
           <div class="card-body"><h3>This is the body</h3></div>
           <div class="card-footer"><h4>This is the footer</h4></div>
