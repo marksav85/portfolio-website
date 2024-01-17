@@ -186,7 +186,7 @@
         <div class="card project-two">
           <div class="card-header"><h3>Movie API</h3></div>
           <div class="card-body">
-            <img src="img/work/project2/image1.jpg" alt="Pokemon App" />
+            <img src="img/work/project2/image1.jpg" alt="MongoDB" />
             <p>
               The server-side component of an IMDB style movies application. It
               contains a database with information for various movies such as
@@ -282,7 +282,7 @@
         <div class="card project-three">
           <div class="card-header"><h3>MyFlix Movies</h3></div>
           <div class="card-body">
-            <img src="img/work/project3/image1.jpg" alt="Pokemon App" />
+            <img src="img/work/project3/image1.jpg" alt="MyFlix Movies" />
             <p>
               The client-side component of a movies application. The single-page
               application (SPA) that allows users to sign up, view movie data
@@ -392,10 +392,128 @@
             </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header"><h2>This is a header</h2></div>
-          <div class="card-body"><h3>This is the body</h3></div>
-          <div class="card-footer"><h4>This is the footer</h4></div>
+
+        <!-- Project four -->
+        <div class="card project-four">
+          <div class="card-header"><h3>Meet App</h3></div>
+          <div class="card-body">
+            <img src="img/work/project4/image1.jpg" alt="Meet App" />
+            <p>
+              A progressive web app (PWA) that allows you to search by location
+              to see what events are happening in that city. Authentication is
+              via Google and so requires a Google account, and the app can be
+              saved on the desktop or home screen for easy access and allows
+              offline functionality
+            </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                View the Development Process
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <h4>The Development Process</h4>
+
+              <p>
+                The aims of this project were to create a progressive web app
+                (PWA) that could be accessed both online via the web but also
+                saved to desktop or smartphone screen as a web app. As a PWA,
+                the app would offer quick loading, offline functionality, and
+                cross-platform functionality. Access to the app would be via
+                Google OAuth2.0. The app main page would allow users to search
+                via list of cities, and an API request would pull a list of
+                events occurring at that location and display them on the page.
+                The display would show the event information in list format and
+                further details revealed from a drop-down menu when clicked on.
+                Additionally, continuous testing would be deployed in this
+                project to ensure automated and consistent code.
+              </p>
+
+              <p>
+                I began with the app's frontend, once again using React and
+                React bootstrap due to its simplicity and capability of handling
+                responsively SPAs. The initial components were set up to search
+                by city using a user input form, and display event details,
+                including start times, locations, and descriptions, with a
+                user-friendly toggle feature to show further information
+                regarding the event. Using dummy data set up for testing
+                purposes, I was then able to feed data into the app to ensure it
+                displayed correctly. At this point, after setting up the basic
+                structure of the app, and following a Test-driven development
+                (TDD) technique, I began writing unit tests followed by
+                integration tests, to ensure the parts worked individually and
+                together. JEST was chosen as the testing suite as it is well
+                documented and can be used for both test approaches. I then
+                began writing acceptance tests using cucumber and implementing
+                the relevant features and then end-to-end tests using puppeteer.
+                I found ensuring all that all tests passed correctly quite
+                challenging, as writing the test, and then implementing the
+                correct code to make the test pass was quite time consuming.
+                However, using online resources such as cheat sheets helped
+                enormously with speeding this process up and making sure my
+                tests were written correctly. Ensuring that all tests passed
+                with the dummy data, I then began working on the backend
+                requests to obtain the API data from Google Calendar API. Rather
+                than using traditional server architecture for this, Serverless
+                lambda functions hosted by AWS were used due to their
+                availability and low/no maintenance. This was connected to
+                Google Services allowing for authentication via Google OAuth2.0.
+                With this, a user could login via Google and see the relevant
+                events pulled from Google Calendar API. Ensuring all tests
+                passed, I could then begin implementing offline functionality
+                and ‘save to desktop/home screen’ via the use of service
+                workers.
+              </p>
+
+              <p>
+                Despite passing all tests, and achieving all the objective
+                functionality, I still felt the app wasn’t as attractive as it
+                could be. To resolve this, a graphical overlay was implemented
+                using a visualization library to transform the API data into a
+                visual breakdown of event types and quantities in each location,
+                along side the list view already implemented. This made the app
+                more colourful and visually interesting. Along side some custom
+                styling, the app looked much more appealing. The extra graphical
+                overlay then had to be written into the tests to ensure it was
+                included and functioned as intended. The final step was using
+                google lighthouse PWA checklist and an online performance tool
+                to ensure the app performed as expected.
+              </p>
+
+              <p>
+                The final product was a visually pleasing and responsive PWA
+                with instant loading, offline support, push notifications, “add
+                to home screen” prompt, and cross-platform compatibility. The
+                serverless function allowed for easy a low maintenance backend
+                option and the TDD approach resulted in all errors being caught
+                and eliminated during the build process.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span
+                >React, React Bootstrap, JavaScript, AWS Lambda, Google API
+                Services, Jest, Cucumber, Puppeteer</span
+              >
+            </p>
+            <p>
+              Website link:
+              <span>https://marksav85.github.io/meet/</span>
+            </p>
+            <p>
+              GitHub repository:
+              <span>https://github.com/marksav85/meet</span>
+            </p>
+          </div>
         </div>
         <div class="card">
           <div class="card-header"><h2>This is a header</h2></div>
