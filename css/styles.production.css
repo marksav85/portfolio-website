@@ -253,6 +253,11 @@ button:focus {
   color: #357b70;
 }
 
+.about-table img {
+  width: 32px;
+  height: 32px;
+}
+
 #about-picture {
   margin: 20px auto;
   width: 40%;
