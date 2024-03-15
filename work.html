@@ -86,7 +86,7 @@
         <div class="card project-one">
           <div class="card-header"><h3>Pokemon App</h3></div>
           <div class="card-body">
-            <img src="img/work/project1/image1.jpg" alt="Pokemon App" />
+            <img src="img/work/pokemon-app/image1.jpg" alt="Pokemon App" />
             <div class="body-text-container">
               <p>
                 An app that dynamically populates the page with Pokemon data
@@ -185,9 +185,181 @@
 
         <!-- Project two -->
         <div class="card project-two">
+          <div class="card-header"><h3>Travel App</h3></div>
+          <div class="card-body">
+            <img src="img/work/travel-app/image1.jpg" alt="Travel App" />
+            <div class="body-text-container">
+              <p>
+                A travel app which utilizes the Web API from OpenWeatherMap.org
+                to seamlessly fetch and deliver comprehensive weather data for
+                user-specified destinations. With a user-friendly interface, the
+                app ensures easy access to past, present and future weather
+                conditions, empowering travelers to make informed decisions
+                based on accurate and up-to-date information.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                To utilize the app, users need to input a destination location
+                by providing the city name and date of travel. In cases where no
+                data is input, the default settings will consider Berlin as the
+                destination and today's date. Upon clicking the submit button,
+                the UI will promptly display the weather data for the specified
+                destination and date.
+              </p>
+
+              <p>
+                Users can search for weather data by city name, utilizing the
+                Open Weather Geocoding API to retrieve information from its
+                extensive database. If the entered city is not found in the
+                database, an error message will be generated to inform the user
+                of the issue.
+              </p>
+
+              <p>
+                The app supports future forecasts for up to 1.5 years ahead,
+                offering users the flexibility to plan well in advance.
+                Additionally, historical weather data can be retrieved for
+                periods spanning over 40 years, providing a comprehensive range
+                of information for various purposes.
+              </p>
+
+              <p>
+                Upon submitting the search, the app will return detailed weather
+                information, including the city name, date, temperature (in
+                Celsius), cloud cover, rainfall, and an icon symbolizing the
+                prevailing weather conditions. This comprehensive dataset equips
+                users with a holistic understanding of the weather forecast for
+                their chosen destination and date.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span
+                >HTML, CSS, JavaScript, Restful API, Express, Node,
+                Webpack</span
+              >
+            </p>
+            <a href="https://my-travel-weather-app-997ff38afb18.herokuapp.com/"
+              ><span>Travel App</span></a
+            >
+            <a href="https://github.com/marksav85/travel_app"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project three -->
+        <div class="card project-three">
+          <div class="card-header"><h3>Language Coach</h3></div>
+          <div class="card-body">
+            <img
+              src="img/work/language-coach-aa/image1.jpg"
+              alt="Language Coach AA"
+            />
+            <div class="body-text-container">
+              <p>
+                A single page application built using React for a language
+                business. The page is available in 3 languages with the language
+                data accessed via Strapi and GraphQL. The site owner can update
+                the text on the page via a separate admin site, which has login
+                authentication (handled by Firebase), and which allows dynamic
+                updating of the client-side website.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The client-side website is developed using React for quick and
+                responsive layouts. The site is displayed in 3 different
+                languages using a toggle button represented as language flags.
+                The flags are imported using the country-flag-icons package to
+                keep file sizes to a minimum. A fixed sidebar handles navigation
+                on the left-hand side, which moves to the top of page on mobile
+                view for a better layout on small screens. The main component
+                contains 4 pages accessible via scrolling or sidebar navigation
+                hooks. The contacts page also uses a contact form, which sends
+                data direct to the site owner using EmailJS.
+              </p>
+
+              <p>
+                The language data for the site is stored using the headless CMS
+                Strapi. The data is accessed and fetched from Strapi using
+                GraphQL, which is an installable plugin with Strapi, and so can
+                be used with the client-side app to pull the language data from
+                Strapi on page load. While the data on Strapi can be accessed
+                and managed via Strapi, this would require a slight learning
+                curve on behalf of the site owner. Therefore, a simpler and more
+                user-friendly approach was implemented by using a simple admin
+                site to access and manage the data.
+              </p>
+
+              <p>
+                The admin site is a separate site again developed using React.
+                The initial page is a login form with login authentication
+                handled by Firebase. After login the site owner is able to
+                access all text on the client-side website with a simplified
+                overview. All 3 languages are accessible via a sidebar and the
+                text can simply be updated via a text box and update button. The
+                data is updated on the Strapi CMS, and then immediately
+                available on the client-side website.
+              </p>
+
+              <p>
+                Together the client-side and backend admin page work seamlessly,
+                using Firebase for authentication and Strapi to handle the data,
+                for a user-friendly and simplified approach to giving the site
+                owner the option to manage the data themselves without any
+                required learning curve.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>React, Strapi, GraphQL, Firebase, EmailJS</span>
+            </p>
+
+            <a href="https://language-coach-aa.com/"
+              ><span>Language Coach</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project four -->
+        <div class="card project-four">
           <div class="card-header"><h3>Movie API</h3></div>
           <div class="card-body">
-            <img src="img/work/project2/image1.jpg" alt="MongoDB" />
+            <img src="img/work/movie-api/image1.jpg" alt="MongoDB" />
             <div class="body-text-container">
               <p>
                 The server-side component of an IMDB style movies application.
@@ -278,11 +450,11 @@
           </div>
         </div>
 
-        <!-- Project three -->
-        <div class="card project-three">
+        <!-- Project five -->
+        <div class="card project-five">
           <div class="card-header"><h3>MyFlix Movies</h3></div>
           <div class="card-body">
-            <img src="img/work/project3/image1.jpg" alt="MyFlix Movies" />
+            <img src="img/work/myflix-movies/image1.jpg" alt="MyFlix Movies" />
             <div class="body-text-container">
               <p>
                 The client-side component of a movies application. The
@@ -392,11 +564,130 @@
           </div>
         </div>
 
-        <!-- Project four -->
-        <div class="card project-four">
+        <!-- Project six -->
+        <div class="card project-six">
+          <div class="card-header"><h3>MyFlix Angular</h3></div>
+          <div class="card-body">
+            <img
+              src="img/work/myflix-angular/image1.jpg"
+              alt="MyFlix Angular"
+            />
+            <div class="body-text-container">
+              <p>
+                The client-side application for registering and viewing a movie
+                database, using TypeScript and Angular, and uses Angular
+                Material for styling. Typedoc is used to comment the codebase
+                and for documentation.
+              </p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View the Development Process
+                </button>
+              </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <h5>The Development Process</h5>
+
+              <p>
+                The objective was to develop an alternative client-side app to
+                the MyFlix movie database. Using TypeScript and Angular, the
+                goal was to create a robust and secure application with enhanced
+                functionality. Overcoming the learning curve associated with
+                Angular's structured folder organization and TypeScript's strict
+                typing was an important challenge but crucial to ensuring
+                robustness and security in the application. The app also needed
+                to integrate user authentication features, allowing users to
+                sign up, update their information, manage favourite movies, and
+                retrieve detailed movie data from the server-side movie
+                database.
+              </p>
+
+              <p>
+                Once the project was set up, I started by creating the main
+                movie list component, setting up the required logic to fetch the
+                movies from the database and feed them into the component and
+                then into the detailed movie component. The basic page layouts
+                were built using HTML but using Angular Material classes and
+                styles, making the layout quick and simple to create and
+                offering a visually appealing and responsive user interface.
+                Familiarising myself with Angular's structured folder system and
+                Angular Material was new at first, but they are both well
+                documented. Using Typescript, the logic to pull API data was
+                placed in a fetch-api file accessible to all components via
+                import, whereas the component functions were placed in the
+                relevant component folder, which I found structurally logical
+                and easy to follow. TypeScript's strict typing took some getting
+                used to, but it is also well documented and I found it
+                significantly reduced bugs and errors in the code, so required
+                less debugging. Once the movie components were complete, I then
+                set about creating the welcome page, login, and user
+                registration components. Using Angular Material for the UI and
+                importing much of the component logic from the already created
+                fetch-api made this a relatively painless task. Similar to the
+                React client, web token authentication was used to allow the
+                user to login. A navigation bar was then added using routerLink
+                to allow navigation between pages. The last essential component
+                was the profile page including account deletion, displaying user
+                information and update user information. Like previous
+                components, Angular Material was used and CRUD operation logic
+                using TypeScript created to update user information and for the
+                account deletion.
+              </p>
+
+              <p>
+                With all components completed, I decided on making some added
+                features to make the site more appealing. The first was to add a
+                favourites button alongside each the movie details for each
+                movie. This could be used to favourite or unfavourite movies. I
+                then added an extra section within the profile component, that
+                would display the favourited movies – essentially a favourites
+                list. Further user experience improvements were added with
+                customised CSS stylings alongside the Angular Material layout to
+                give the app its own modern and unique look.
+              </p>
+
+              <p>
+                The finished application was a user-friendly and modern
+                client-side movie application. By overcoming the learning curve
+                and embracing Angular's structured approach and TypeScript's
+                strict typing, the application achieved a high level of
+                robustness and security. Typedoc documentation was used
+                throughout, ensuring comprehensive and accessible codebase
+                documentation, facilitating maintenance and future development.
+                The application's user interface, designed with Angular
+                Material, provided a visually appealing and responsive
+                experience for users. Overall, the project successfully
+                delivered a client-side component that met the requirements and
+                provided a seamless movie browsing experience for users.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <p>
+              Built using:
+              <span>Angular, Angular Material, TypeScript, TypeDoc</span>
+            </p>
+            <a href="https://marksav85.github.io/myFlix-Angular-client/welcome"
+              ><span>MyFlix Angular</span></a
+            >
+            <a href="https://github.com/marksav85/myFlix-Angular-client"
+              ><span>GitHub Repository</span></a
+            >
+          </div>
+        </div>
+        <!-- Project seven -->
+        <div class="card project-seven">
           <div class="card-header"><h3>Meet App</h3></div>
           <div class="card-body">
-            <img src="img/work/project4/image1.jpg" alt="Meet App" />
+            <img src="img/work/meet-app/image1.jpg" alt="Meet App" />
             <div class="body-text-container">
               <p>
                 A progressive web app (PWA) that allows you to search by
@@ -512,11 +803,11 @@
           </div>
         </div>
 
-        <!-- Project five -->
-        <div class="card project-four">
+        <!-- Project eight -->
+        <div class="card project-eight">
           <div class="card-header"><h3>Chat App</h3></div>
           <div class="card-body">
-            <img src="img/work/project5/image1.jpg" alt="Chat App" />
+            <img src="img/work/chat-app/image1.jpg" alt="Chat App" />
             <div class="body-text-container">
               <p>
                 A WhatsApp-style chat app for mobile devices. Users can select
@@ -609,123 +900,6 @@
             </p>
             <a href=""><span></span></a>
             <a href="https://github.com/marksav85/chat-app"
-              ><span>GitHub Repository</span></a
-            >
-          </div>
-        </div>
-
-        <!-- Project six -->
-        <div class="card project-six">
-          <div class="card-header"><h3>MyFlix Angular</h3></div>
-          <div class="card-body">
-            <img src="img/work/project6/image1.jpg" alt="MyFlix Angular" />
-            <div class="body-text-container">
-              <p>
-                The client-side application for registering and viewing a movie
-                database, using TypeScript and Angular, and uses Angular
-                Material for styling. Typedoc is used to comment the codebase
-                and for documentation.
-              </p>
-              <p class="d-inline-flex gap-1">
-                <button
-                  class="btn btn-secondary btn-sm"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  View the Development Process
-                </button>
-              </p>
-            </div>
-            <div class="collapse" id="collapseExample">
-              <h5>The Development Process</h5>
-
-              <p>
-                The objective was to develop an alternative client-side app to
-                the MyFlix movie database. Using TypeScript and Angular, the
-                goal was to create a robust and secure application with enhanced
-                functionality. Overcoming the learning curve associated with
-                Angular's structured folder organization and TypeScript's strict
-                typing was an important challenge but crucial to ensuring
-                robustness and security in the application. The app also needed
-                to integrate user authentication features, allowing users to
-                sign up, update their information, manage favourite movies, and
-                retrieve detailed movie data from the server-side movie
-                database.
-              </p>
-
-              <p>
-                Once the project was set up, I started by creating the main
-                movie list component, setting up the required logic to fetch the
-                movies from the database and feed them into the component and
-                then into the detailed movie component. The basic page layouts
-                were built using HTML but using Angular Material classes and
-                styles, making the layout quick and simple to create and
-                offering a visually appealing and responsive user interface.
-                Familiarising myself with Angular's structured folder system and
-                Angular Material was new at first, but they are both well
-                documented. Using Typescript, the logic to pull API data was
-                placed in a fetch-api file accessible to all components via
-                import, whereas the component functions were placed in the
-                relevant component folder, which I found structurally logical
-                and easy to follow. TypeScript's strict typing took some getting
-                used to, but it is also well documented and I found it
-                significantly reduced bugs and errors in the code, so required
-                less debugging. Once the movie components were complete, I then
-                set about creating the welcome page, login, and user
-                registration components. Using Angular Material for the UI and
-                importing much of the component logic from the already created
-                fetch-api made this a relatively painless task. Similar to the
-                React client, web token authentication was used to allow the
-                user to login. A navigation bar was then added using routerLink
-                to allow navigation between pages. The last essential component
-                was the profile page including account deletion, displaying user
-                information and update user information. Like previous
-                components, Angular Material was used and CRUD operation logic
-                using TypeScript created to update user information and for the
-                account deletion.
-              </p>
-
-              <p>
-                With all components completed, I decided on making some added
-                features to make the site more appealing. The first was to add a
-                favourites button alongside each the movie details for each
-                movie. This could be used to favourite or unfavourite movies. I
-                then added an extra section within the profile component, that
-                would display the favourited movies – essentially a favourites
-                list. Further user experience improvements were added with
-                customised CSS stylings alongside the Angular Material layout to
-                give the app its own modern and unique look.
-              </p>
-
-              <p>
-                The finished application was a user-friendly and modern
-                client-side movie application. By overcoming the learning curve
-                and embracing Angular's structured approach and TypeScript's
-                strict typing, the application achieved a high level of
-                robustness and security. Typedoc documentation was used
-                throughout, ensuring comprehensive and accessible codebase
-                documentation, facilitating maintenance and future development.
-                The application's user interface, designed with Angular
-                Material, provided a visually appealing and responsive
-                experience for users. Overall, the project successfully
-                delivered a client-side component that met the requirements and
-                provided a seamless movie browsing experience for users.
-              </p>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <p>
-              Built using:
-              <span>Angular, Angular Material, TypeScript, TypeDoc</span>
-            </p>
-            <a href="https://marksav85.github.io/myFlix-Angular-client/welcome"
-              ><span>MyFlix Angular</span></a
-            >
-            <a href="https://github.com/marksav85/myFlix-Angular-client"
               ><span>GitHub Repository</span></a
             >
           </div>
